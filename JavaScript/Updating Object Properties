@@ -1,0 +1,11 @@
+we update his object's name property: ourDog.name = "Happy Camper"; or ourDog["name"] = "Happy Camper";
+Now when we evaluate ourDog.name, instead of getting "Camper", we'll get his new name, "Happy Camper".
+
+var myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.name="Happy Coder";
