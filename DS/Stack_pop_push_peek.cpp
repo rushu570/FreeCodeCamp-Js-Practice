@@ -410,6 +410,15 @@ int peek(struct Stack *ptr,int index){
         return ptr->arr[ptr->top-index+1];
     }
 }
+int stackbottom(struct Stack *ptr){
+    return ptr->arr[0];
+
+}
+int stacktop(struct Stack *ptr){
+    return ptr->arr[ptr->top];
+
+}
+
 void solve(){
     /* struct Stack s;
     s.size=80;
@@ -442,6 +451,8 @@ void solve(){
         cout<<"Element "<<i<<" "<<peek(s,i)<<endl;
 
     }
+    cout<<stacktop(s)<<endl;
+    cout<<stackbottom(s)<<endl;
     
     
 }
